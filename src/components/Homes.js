@@ -1,7 +1,8 @@
-import '../style/components/App.css';
+import '../style/components/Homes.css';
 import HomesHeader from "./HomesHeader";
+import React from 'react';
 import HomesContent from "./HomesContent";
-import arrow from '../arrow.svg'
+import arrow from '../svg/arrow.svg'
 
 function Homes() {
   return (
@@ -10,7 +11,6 @@ function Homes() {
             <div className='block-homes__content'>
           <HomesContent/>
             <img src={arrow}
-
             alt='arrow'
             className='icon-arrows'/>
             </div>

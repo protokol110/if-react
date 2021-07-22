@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-400-cyrilic.woff2") format('woff2');
+  src: url("../fonts/Roboto-400-latin.woff2") format('woff2');
+  src: url("../fonts/Roboto-500-cyrilic.woff2") format('woff2');
+  src: url("../fonts/Roboto-500-latin.woff2") format('woff2');
+  src: url("../fonts/Roboto-100-latin.woff2") format('woff.2');
+  src: url("../fonts/Roboto-100-cyrilic.woff2") format('woff.2');
+}
+
 .block-homes__content{
   display: flex;
   position: relative;
@@ -16,7 +26,7 @@
 }
 .block-homes__name-content{
   font-size: 40px;
-  font-family: sans-serif;
+  font-family: 'Roboto',sans-serif;
 }
   .block-homes__container-image{
     margin-right: 8.33%;
@@ -27,7 +37,7 @@
   font-size: 24px;
   line-height: 28px;
   color: #3077C6;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
@@ -35,7 +45,7 @@
   font-size: 24px;
   line-height: 28px;
   color: #BFBFBF;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 .image-1-hotels{
