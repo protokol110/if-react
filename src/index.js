@@ -9,7 +9,7 @@ ReactDOM.render(
     <Homes />
   </React.StrictMode>,
 
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 reportWebVitals();
