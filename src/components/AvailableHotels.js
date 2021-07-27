@@ -1,5 +1,7 @@
+import React from 'react';
 import AvailableHeader from './AvailableHeader';
 import AvailableContent from './AvailableContent';
+import '../style/components/Homes.css';
 
 function AvailableHotels(props) {
   return (
@@ -9,7 +11,6 @@ function AvailableHotels(props) {
         <AvailableContent data={props.data} />
       </div>
     </div>
-
   );
 }
 export default AvailableHotels;
