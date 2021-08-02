@@ -1,16 +1,18 @@
-import '../style/components/Homes.css';
 import React from 'react';
 import SearchForm from './SearchForm';
 import Homes from './Homes';
 import data from './constants/array';
 import AvailableHotels from './AvailableHotels';
 
+import '../style/components/Homes.css';
+import '../style/components/HotelInput.css';
+import '../style/components/SearchButton.css';
+
 function App() {
-  const [array, setArray] = React.useState(data);
   return (
     <>
-      <SearchForm setArray={setArray} />
-        <AvailableHotels data={array} />
+      <SearchForm />
+      <AvailableHotels />
       <Homes />
     </>
   );
