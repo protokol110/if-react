@@ -1,0 +1,54 @@
+.block-homes__content{
+  display: flex;
+  position: relative;
+  margin-top: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
+  overflow: hidden;
+}
+.block-homes{
+  background-color: #EAF0F9;
+  height: 750px;
+}
+.block-homes__name{
+  display: flex;
+  justify-content: center;
+}
+.block-homes__name-content{
+  font-size: 40px;
+  font-family: sans-serif;
+}
+  .block-homes__container-image{
+    margin-right: 8.33%;
+    margin-top: 105px;
+  }
+
+.block-homes__container-text{
+  font-size: 24px;
+  line-height: 28px;
+  color: #3077C6;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.block-homes__container-text-grey{
+  font-size: 24px;
+  line-height: 28px;
+  color: #BFBFBF;
+  font-family: sans-serif;
+  margin: 0;
+}
+.image-1-hotels{
+  width: 250px;
+  height: 250px;
+}
+
+.icon-arrows{
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: -1%;
+  top: 46%;
+  cursor: pointer;
+}
+
