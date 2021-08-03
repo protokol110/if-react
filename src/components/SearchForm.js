@@ -1,6 +1,8 @@
 import React from 'react';
 import HotelInput from './HotelInput';
 import SearchButton from './SearchButton';
+import CalendarForm from './CalendarForm';
+import FilterPeople from "./FilterPeople";
 
 function SearchForm() {
   let valueInput = '';
@@ -16,6 +18,8 @@ function SearchForm() {
     <>
       <form className="search-form text-form">
         <HotelInput onClick={clickSearch} />
+        <CalendarForm />
+        <FilterPeople />
         <SearchButton onChage={inputChange} />
       </form>
 
