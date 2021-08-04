@@ -1,4 +1,5 @@
 import data from "./constants/array";
+import React from 'react';
 
 function HomesContent() {
     return ( data.map(elem =>
