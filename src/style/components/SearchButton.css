@@ -1,0 +1,11 @@
+.submit-btn {
+    max-width: 190px;
+    width: 100%;
+    background-color: #3077C6;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .2s;
+}

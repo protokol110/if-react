@@ -1,8 +1,7 @@
 import React from 'react';
-import data from './constants/array';
 
-function HomesContent() {
-  return (data.map((elem) => (
+function AvailableContent(props) {
+  return (props.data.map((elem) => (
     <div className="block-homes__container-image" key={elem.id}>
       <div className="block-homes__container-image-first block-1-hotels">
         <img
@@ -23,4 +22,4 @@ function HomesContent() {
   ))
   );
 }
-export default HomesContent;
+export default AvailableContent;
