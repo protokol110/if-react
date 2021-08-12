@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class AvailableContent extends React.Component {
+/* export default class AvailableContent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -8,25 +8,6 @@ export default class AvailableContent extends React.Component {
       isLoaded: false,
       items: [],
     };
-  }
-
-  componentDidMount() {
-    fetch('https://fe-student-api.herokuapp.com/api/hotels')
-      .then((res) => res.json())
-      .then(
-        (result) => {
-          this.setState({
-            isLoaded: true,
-            items: result,
-          });
-        },
-        (error) => {
-          this.setState({
-            isLoaded: true,
-            error,
-          });
-        },
-      );
   }
 
   render() {
@@ -63,29 +44,31 @@ export default class AvailableContent extends React.Component {
     ))
     );
   }
-}
-/*
+} */
+
 function AvailableContent(props) {
-  return (props.data.map((elem) => (
-    <div className="block-homes__container-image" key={elem.id}>
+  const {
+    name, city, country, imageUrl, id,
+  } = props;
+
+  return (
+    <div className="block-homes__container-image" key={id}>
       <div className="block-homes__container-image-first block-1-hotels">
         <img
-          src={elem.imageUrl}
-          alt={elem.name}
+          src={imageUrl}
+          alt={name}
           className="image-1-hotels"
         />
         <p className="block-homes__container-text">
-          {elem.name}
+          {name}
         </p>
         <p className="block-homes__container-text-grey">
-          {elem.city}
+          {city}
           ,
-          {elem.country}
+          {country}
         </p>
       </div>
     </div>
-  ))
   );
 }
 export default AvailableContent;
-*/

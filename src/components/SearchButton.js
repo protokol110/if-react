@@ -1,12 +1,12 @@
 import React from 'react';
 
-function SearchButton({ clickSearch }) {
+function SearchButton({ searchSubmitHandler }) {
   return (
     <input
       type="submit"
       value="Search"
       className="submit-btn"
-      onClick={clickSearch}
+      onClick={searchSubmitHandler}
     />
   );
 }
